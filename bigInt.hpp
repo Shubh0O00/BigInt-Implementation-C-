@@ -1,13 +1,14 @@
 /**
- * @file bigInt.cpp
+ * @file bigInt.hpp
  * @brief Program to do addition and subtraction with integers of size 128 bit i.e. no. of digits = 41
- * @version 0.1
- * @date 2021-02-09
+ * @version 0.2
+ * @date 2021-02-26
  * 
  * @copyright Copyright (c) 2021
  * 
  */
-
+#ifndef BIG_INT
+#define BIG_INT
 #include<iostream>
 #include<string.h>
 
@@ -294,66 +295,4 @@ class BigInt
         }
 };
 
-int main()
-{
-    BigInt x,y,z;
-    cout<<"\nEnter the first integer: \n";
-    cin>>x;
-    cout<<"\nEnter the second integer: \n";
-    cin>>y;
-    cout<<"\nx + y = "<<x+y;
-    cout<<"\nx - y = "<<x-y;
-}
-
-
-/*Example Outputs
-Case 1:
-
-Enter the first integer: 
-123456789123456789123456789123456
-
-Enter the second integer:
-963258741147852369963258774
-
-x + y = 123457752382197936975826752382230
-
-x - y = 123455825864715641271086825864682
-
-
-Case 2:
-
-Enter the first integer:
-999999999999999999999999999
-
-Enter the second integer:
-99999999999999999999999999999999999
-
-x + y = 100000000999999999999999999999999998
-
-x - y = -99999999000000000000000000000000000
-
-
-Case 3:
-
-Enter the first integer:
-1895809501740239150591806515482659487         
-
-Enter the second integer:
--23648928292952982519852892929529521895
-
-x + y = -21753118791212743369261086414046862408
-
-x - y = 25544737794693221670444699445012181382
-
-Case 4:
-
-Enter the first integer:
--9271254234679852972461295482592642595929 
-
-Enter the second integer:
--172589219587421597421597421954259142951
-
-x + y = -9443843454267274569882892904546901738880
-
-x - y = -9098665015092431375039698060638383452978
-*/
+#endif
